@@ -1,0 +1,121 @@
+* {
+    box-sizing: border-box;
+}
+
+@keyframes gradient {
+    100% {
+        background-size: 5000px 1000px;
+    }
+}
+
+#header {
+    position: fixed;
+    top: 10px;
+}
+
+body {
+    display: grid;
+    place-items: center;
+    margin-top: 100px;
+    height: 155vh;
+    padding: 0 24px;
+    background-color: #0d2a47;
+    background-image: url("/bg.svg");
+    background-size: 2000px 1000px;
+    background-position: -500px 0;
+    color: #ffffff;
+    font-family: "Roboto";
+    animation: gradient 10s infinite alternate linear;
+}
+
+@media (min-width: 420px) {
+    body {
+        padding: 0;
+    }
+
+    .flats-container {
+        width: 60%;
+    }
+}
+
+.flats-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+.inputs-container {
+    width: 100%;
+    margin-right: 20px;
+}
+
+.flat-list-container {
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 22px;
+    padding: 20px;
+    backdrop-filter: blur(10px);
+    max-height: 90vh;
+    overflow-y: auto;
+    width: 100%;
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: 500;
+    margin: 10px 0 10px;
+}
+
+.flat-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    width: 100%;
+    margin: 0;
+}
+
+.flat-form input,
+.flat-form button,
+button {
+    width: 100%;
+    outline: none;
+    padding: 8px;
+    margin-top: 5px;
+    font-family: inherit;
+    font-size: 16px;
+    border-radius: 8px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    color: inherit;
+}
+
+.flat-form input:focus {
+    border-color: #157ae1;
+}
+
+.flat-form button,
+button {
+    cursor: pointer;
+    background: #157ae1;
+    color: #ffffff;
+    border: 3px solid white;
+    border-radius: 4px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: white;
+    color: #157ae1;
+}
+
+#flats {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 10px;
+    color: white;
+}

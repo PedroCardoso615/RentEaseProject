@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="./design/login.css">
+</head>
+
+<body>
+    <div class="login">
+        <div class="avatar">
+            <img src="">
+        </div>
+        <h2>Login</h2>
+        <h3>Welcome to FlatFinder</h3>
+        <form class="login-form">
+            <div class="loginbox">
+                <input type="email" id="email" placeholder="Email" required>
+            </div>
+            <div class="loginbox">
+                <input type="password" id="password" placeholder="Password" required>
+            </div>
+            <br>
+            <button onclick="userRegisterData()" id="sign_btn">
+                <span class="login-text">
+                    LOGIN
+                </span>
+            </button>
+            <button class="register_btn"><a href="register.html" class="register">REGISTER</a></button>
+        </form>
+    </div>
+
+    <script src="login.js"></script>
+</body>
+
+</html>

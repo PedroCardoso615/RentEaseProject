@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register</title>
+  <link rel="stylesheet" href="./design/register.css">
+</head>
+
+<body>
+  <div class="signup">
+    <h2>Register</h2>
+    <form class="signup-form">
+      <div class="signup-box">
+        <input type="text" id="firstname" placeholder="First Name" required>
+      </div>
+      <div class="signup-box">
+        <input type="text" id="lastname" placeholder="Last Name" required>
+      </div>
+      <div class="signup-box">
+        <input type="date" id="birthdate" placeholder="Date of Birth" required>
+      </div>
+      <div class="signup-box"> 
+        <input type="email" id="email" placeholder="Email" pattern=".+@.*\.(com|pt)" required>
+      </div>
+      <div class="signup-box">
+        <input type="password" id="password" placeholder="Password" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+      </div>
+      <p class="login-text">
+        Signed up already?
+        <a href="login.html" class="login-link">Login here</a>
+      </p>
+      <button type="submit" onclick="saveRegister()" id="sign_btn">
+        Sign Up
+      </button>
+    </form>
+  </div>
+
+  <script src="register.js"></script>
+</body>
+
+</html>

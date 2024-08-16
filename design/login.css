@@ -1,0 +1,133 @@
+* {
+    box-sizing: border-box;
+}
+
+@keyframes gradient {
+    100% {
+        background-size: 5000px 1000px;
+    }
+}
+
+body {
+    display: grid;
+    place-items: center;
+    margin: 0;
+    height: 100vh;
+    padding: 0 24px;
+    background-color: #0d2a47;
+    background-image: url("/bg.svg");
+    background-size: 2000px 1000px;
+    background-position: -500px 0;
+    color: #f9f9f9;
+    font-family: "Roboto";
+    animation: gradient 10s infinite alternate linear;
+}
+
+@media (width >=420px) {
+    body {
+        padding: 0;
+    }
+
+    .login {
+        width: 60%;
+    }
+}
+
+.login {
+    position: fixed;
+    z-index: 3;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    width: 90%;
+    padding: 0px 30px 44px;
+    border-radius: 22px;
+    background: rgb(0 0 0 / 50%);
+    backdrop-filter: blur(10px);
+    text-align: center;
+}
+
+@media (width >=420px) {
+    .login {
+        width: 380px;
+    }
+}
+
+.login h2 {
+    font-size: 36px;
+    font-weight: 500;
+    margin: 0 0 10px;
+}
+
+.login h3 {
+    color: var(--color-muted);
+    margin: 0 0 20px;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.login-form {
+    display: grid;
+    gap: 5px;
+    place-items: center;
+    width: 100%;
+    margin: 0;
+}
+
+.loginbox {
+    width: 100%;
+    position: relative;
+}
+
+.login-form input,
+.login-form button {
+    width: 100%;
+    height: 60px;
+    outline: none;
+    padding: 0;
+    font-family: inherit;
+    font-size: 16px;
+    border-radius: 8px;
+}
+
+.login-form input {
+    background: transparent;
+    border: 2px solid rgb(255 255 255 / 10%);
+    font-size: 18px;
+    padding: 0 0 0 10px;
+    color: inherit;
+}
+
+.login-form input:focus {
+    border-color: #157ae1;
+}
+
+#sign_btn {
+    cursor: pointer;
+    background: #157ae1;
+    color: #ffffff;
+    border: 0;
+    font-weight: 600;
+    letter-spacing: 2px;
+    font-size: 16px;
+}
+
+#sign_btn:hover {
+    background-color: white;
+    color: #157ae1;
+}
+
+.register {
+    color: #157ae1;
+    font-size: 16px;
+    text-decoration: none;
+    border: 0;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.register_btn:hover
+ {
+    cursor: pointer;
+    background-color: #a0a0a0;
+}

@@ -1,0 +1,54 @@
+header {
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    font-size: larger;
+    background-color: #1d4168;
+    padding: 5px;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 50px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    position: relative;
+    top: 35px;
+    right: 20px;
+}
+
+.nav-links a:hover {
+    text-shadow: 2px 5px 2px rgb(38, 39, 38);
+    color: #ffffff;
+    font-weight: bold;
+    position: relative;
+    top: 35px;
+    right: 20px;
+}
+
+#hello-user {
+    position: relative;
+    top: 35px;
+    right: 20px;
+    font-family: "Roboto";
+    font-weight: bold;
+}
+
+@media (width <= 687px) {
+    #hello-user{
+        display: none;
+    }
+}
+
+.hidden {
+    display: none;
+}

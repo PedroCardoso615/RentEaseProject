@@ -1,0 +1,125 @@
+* {
+    box-sizing: border-box;
+}
+
+@keyframes gradient {
+    100% {
+        background-size: 5000px 1000px;
+    }
+}
+
+body {
+    display: grid;
+    place-items: center;
+    margin: 0;
+    height: 100vh;
+    padding: 0 24px;
+    background-color: #0d2a47;
+    background-image: url("/bg.svg");
+    background-size: 2000px 1000px;
+    background-position: -500px 0;
+    color: #f9f9f9;
+    font-family: "Roboto";
+    animation: gradient 10s infinite alternate linear;
+}
+
+@media (width >=420px) {
+    body {
+        padding: 0;
+    }
+
+    .signup {
+        width: 60%;
+    }
+}
+
+.signup {
+    position: fixed;
+    z-index: 3;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    width: 90%;
+    padding: 0px 30px 44px;
+    border-radius: 22px;
+    background: rgb(0 0 0 / 50%);
+    backdrop-filter: blur(10px);
+    text-align: center;
+}
+
+@media (width >=420px) {
+    .signup {
+        width: 380px;
+    }
+}
+
+.h2 {
+    font-size: 36px;
+    font-weight: 500;
+    margin: 0 0 10px;
+}
+
+.signup-form {
+    display: grid;
+    gap: 5px;
+    place-items: center;
+    width: 100%;
+    margin: 0;
+}
+
+.signup-box {
+    width: 100%;
+    position: relative;
+}
+
+.signup-form input,
+.signup-form button {
+    width: 100%;
+    height: 40px;
+    outline: none;
+    padding: 0;
+    font-family: inherit;
+    font-size: 16px;
+    border-radius: 8px;
+}
+
+.signup-form input {
+    background: transparent;
+    border: 2px solid rgb(255 255 255 / 10%);
+    font-size: 18px;
+    padding: 0 0 0 10px;
+    color: inherit;
+}
+
+.signup-form input:focus {
+    border-color: #157ae1;
+}
+
+.login-text {
+    font-family: inherit;
+}
+
+.login-link {
+    font-family: inherit;
+    text-decoration: none;
+    color: #157ae1;
+}
+
+.login-link:hover {
+    text-decoration: underline;
+}
+
+#sign_btn {
+    cursor: pointer;
+    background: #157ae1;
+    color: #ffffff;
+    border: 0;
+    font-weight: 600;
+    letter-spacing: 2px;
+    font-size: 16px;
+}
+
+#sign_btn:hover {
+    background-color: white;
+    color: #157ae1;
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flats Page</title>
+    <link rel="stylesheet" href="./design/header.css">
+    <link rel="stylesheet" href="./design/flats.css">
+</head>
+
+<body>
+    <div id="header"></div>
+
+    <div class="flats-container">
+        <div class="inputs-container">
+        <h1>Flat Finder</h1>
+        <form id="flat-form" class="flat-form">
+            <div class="flatsbox">
+                <label for="city">City:</label>
+                <input type="text" id="city" required><br><br>
+            </div>
+
+            <div class="flatsbox">
+                <label for="streetName">Street Name:</label>
+                <input type="text" id="streetName" required><br><br>
+            </div>
+
+            <div class="flatsbox">
+                <label for="streetNumber">Street Number:</label>
+                <input type="number" id="streetNumber" required><br><br>
+            </div>
+
+            <div class="flatsbox">
+                <label for="areaSize">Area Size (m²):</label>
+                <input type="number" id="areaSize" required><br><br>
+            </div>
+
+            <div class="flatsbox">
+                <label for="hasAC">Has AC:</label>
+                <input type="checkbox" id="hasAC"><br><br>
+            </div>
+
+            <div class="flatsbox">
+                <label for="yearBuilt">Year Built:</label>
+                <input type="number" id="yearBuilt" required><br><br>
+            </div>
+
+            <div class="flatsbox">
+                <label for="rentPrice">Rent Price ($):</label>
+                <input type="number" id="rentPrice" required><br><br>
+            </div>
+
+            <div class="flatsbox">
+                <label for="dateAvailable">Date Available:</label>
+                <input type="date" id="dateAvailable" required><br><br>
+            </div>
+
+            <button type="button" onclick="addToList()" class="add_btn">Add Flat</button>
+        </form>
+        </div>
+    </div>
+
+    <div class="flat-list-container">
+        <h2>Flat List</h2>
+        <ul id="flats"></ul>
+    </div>
+
+    <script src="header.js"></script>
+    <script src="flats.js"></script>
+</body>
+
+</html>

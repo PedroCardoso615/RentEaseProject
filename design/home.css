@@ -1,0 +1,60 @@
+* {
+    box-sizing: border-box;
+}
+
+@keyframes gradient {
+    100% {
+        background-size: 5000px 1000px;
+    }
+}
+
+#header {
+    position: fixed;
+    top: 10px;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding-top: 200px;
+    background-color: #0d2a47;
+    background-image: url("/bg.svg");
+    background-size: 2000px 1000px;
+    background-position: -500px 0;
+    color: #ffffff;
+    font-family: "Roboto";
+    animation: gradient 10s infinite alternate linear;
+}
+
+.fav-flats h2 {
+    font-family: inherit;
+    font-size: 28px;
+    font-weight: 500;
+    margin: 10px 0 5px;
+    text-align: center;
+}
+
+#favourites {
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 22px;
+    padding: 20px;
+    backdrop-filter: blur(10px);
+    max-height: 90vh;
+    overflow-y: auto;
+    width: 100%;
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 10px;
+    color: white;
+}
+
+#favourites li {
+    margin: 10px 220px 10px 0px;
+    padding: 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+#favourites li:last-child {
+    border-bottom: none;
+}

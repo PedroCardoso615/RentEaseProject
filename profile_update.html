@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Information</title>
+    <link rel="stylesheet" href="./design/header.css">
+    <link rel="stylesheet" href="./design/profile_update.css">
+</head>
+
+<body>
+    <div id="header"></div>
+    
+    <div class="profile">
+        <h1>Update Profile</h1>
+        <form id="profile-form" class="profile-form">
+            <div class="profilebox">
+                <label>First Name</label>
+                <input type="text" id="firstname">
+            </div>
+            <div class="profilebox">
+                <label>Last Name</label>
+                <input type="text" id="lastname">
+            </div>
+            <div class="profilebox">
+                <label>Date of Birth</label>
+                <input type="date" id="birthdate">
+            </div>
+            <div class="profilebox">
+                <label>Email</label>
+                <input type="email" id="email">
+            </div>
+            <div class="profilebox">
+                <label>Password</label>
+                <input type="password" id="password">
+            </div>
+            <button type="submit" onclick="profileupdate()" class="update_btn">Update Profile</button>
+        </form>
+    </div>
+    <script src="header.js"></script>
+    <script src="profile_update.js"></script>
+</body>
+
+</html>
